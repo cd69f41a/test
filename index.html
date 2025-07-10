@@ -344,7 +344,7 @@
           const token = localStorage.getItem('B_token');
           if (token) {
             const iframe = document.getElementById('iframeB');
-            iframe.contentWindow.postMessage({ type: 'INIT_TOKEN', token }, new URL(url).origin);
+            iframe.contentWindow.postMessage({ type: 'INIT_TOKEN', token }, new URL(tureurl).origin);
           }
         };
       </script>
